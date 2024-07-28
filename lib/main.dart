@@ -100,7 +100,7 @@ class HomeActivity extends StatelessWidget{
          },
        ),
 
-       body: const Center(child:  Text(" Fast Project "),),
+       body: const Center(child:  Text(" My Fast Project "),),
      );
   }
 
