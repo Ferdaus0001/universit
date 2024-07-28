@@ -4,14 +4,9 @@ void main(){
   runApp(const Myapp());
 }
 
-<<<<<<< HEAD
 
 class Myapp extends StatelessWidget{
   const Myapp({super.key});
-=======
- class MyApp extends StatelessWidget{/// extends to MyApp
-  const MyApp({super .key});
->>>>>>> origin/master
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +16,6 @@ class Myapp extends StatelessWidget{
         color: Colors.blue,
         debugShowCheckedModeBanner: false,
 
-<<<<<<< HEAD
         home: const HomeActivity()
     );
   }
@@ -101,7 +95,7 @@ class HomeActivity extends StatelessWidget{
            }
            if(index ==2){
              MysnackBar("Person Tab Complete", context);
-             
+
            }
          },
        ),
@@ -111,24 +105,3 @@ class HomeActivity extends StatelessWidget{
   }
 
 }
-=======
-    return const MaterialApp(home: HomeActivity());
-  }
-
- }
- class HomeActivity extends StatelessWidget{
-  const HomeActivity({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-
- return  Scaffold(
-        appBar: AppBar(title: const Text("MyApp"),),
- body : const Center(child: Text("Hello World "))
-    );
-  }
-
-
-
- }
->>>>>>> origin/master
