@@ -31,11 +31,19 @@ class HomeActivity extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
      return Scaffold(
+
+
+
        drawer: Drawer(
+
          child: ListView(
+
            children: [
              DrawerHeader(
+
                padding: EdgeInsets.zero,
+
+
                  child:UserAccountsDrawerHeader(
 
                decoration: BoxDecoration(color: Colors.blue),
@@ -50,10 +58,13 @@ class HomeActivity extends StatelessWidget{
            ],
          ),
        ),
-       // endDrawer:() ,
-       // bottomNavigationBar: (),
-       // floatingActionButton: (),
-       appBar:  AppBar(title: const  Text(" Home"),
+
+
+       appBar:  AppBar(
+
+         title: const  Text(" Home"),
+
+
          titleSpacing: 11,
          centerTitle: true,
          toolbarOpacity: 1,
@@ -66,7 +77,10 @@ class HomeActivity extends StatelessWidget{
            IconButton(onPressed: (){MysnackBar("Settings", context);} , icon: const Icon(Icons.settings)),
            IconButton(onPressed: (){MysnackBar( "Home ", context);} , icon: const Icon(Icons.home_max)),
          ],
+
        ),
+
+
        floatingActionButton: FloatingActionButton(
 
          elevation: 11,
@@ -76,6 +90,7 @@ class HomeActivity extends StatelessWidget{
            MysnackBar("Action Complete", context);
 
          },
+
 
        ),
        bottomNavigationBar: BottomNavigationBar(
@@ -99,8 +114,9 @@ class HomeActivity extends StatelessWidget{
            }
          },
        ),
+       body: const Center(child:  Text(" My Fast Project "),
+       ),
 
-       body: const Center(child:  Text(" My Fast Project "),),
      );
   }
 
