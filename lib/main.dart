@@ -114,7 +114,14 @@ class HomeActivity extends StatelessWidget{
            }
          },
        ),
-       body: const Center(child:  Text(" My Fast Project "),
+       body: Container(
+         height:200 ,
+         width: 200,
+         color: Colors.blue,
+         alignment: Alignment.topCenter,
+         margin: EdgeInsets.fromLTRB(40, 60, 10, 40),
+
+         child: Text(" My Fast Project "),
        ),
 
      );

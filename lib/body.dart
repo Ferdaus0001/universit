@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 void main(){
   runApp(const FastApp());
@@ -17,7 +19,19 @@ class Home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-     appBar: AppBar(),
+      appBar:  AppBar(
+        title: Text('Home'),
+        titleSpacing: 0,
+        centerTitle: true,
+        toolbarHeight: 60,
+        toolbarOpacity: 1,
+        elevation: 0,
+        backgroundColor: Colors.blue,
+        // iconTheme:
+      ),
+
+    // body: ,
+
    );
   }
 
