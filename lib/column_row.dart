@@ -1,28 +1,42 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
+import 'package:universit/Page_One.dart';
+import 'package:universit/Page_Three.dart';
+import 'package:universit/Page_Two.dart';
 
 class RowCollumScreen extends StatelessWidget {
-  const RowCollumScreen({super.key});
+   const RowCollumScreen({super.key});
+ 
+   @override
+   Widget build(BuildContext context) {
+     return  DefaultTabController(
+       length: 3,
+       child: Scaffold(
+         appBar: AppBar(
+           title: Text('Home',style: TextStyle(fontSize: 33,color: Colors.white),),
+           backgroundColor: Colors.blue,
+           elevation: 11,
+           toolbarHeight: 60,
+           titleSpacing: 2,
+           toolbarOpacity: 1,
 
-  @override
-  Widget build(BuildContext context) {
-   return  Scaffold(
-     appBar: AppBar(
-       title: Text(' Row And Collum ',style: TextStyle(color: Colors.white),),
-       centerTitle: true,
-       backgroundColor: Colors.blue,
-     ),
-     body: Column(
-       mainAxisAlignment: MainAxisAlignment.end,
-       children: [
-         Text('A',style: TextStyle(fontSize: 28),),
-         Text('b',style: TextStyle(fontSize: 28),),
-         Text('c',style: TextStyle(fontSize: 28),),
-         Text('b',style: TextStyle(fontSize: 28),),
-         Text('e',style: TextStyle(fontSize: 28),),
-       ],
-     ),
-   );
+           bottom: TabBar(tabs: [
+             Tab(child: Icon(Icons.security,color: Colors.white,),),
+             Tab(child: Icon(Icons.cabin,color: Colors.white,),),
+             Tab(child: Icon(Icons.face,color: Colors.white,),),
+           ]),
+           
+         ),
+         body: Center(
+           child: TabBarView(children: [
+             Page_One(),
+             page_Two(),
+             Page_Three(),
+           ],
 
-
-  }
-}
+           ),
+         ),
+       ),
+     );
+   }
+ }
+ 

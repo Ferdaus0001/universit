@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:universit/column_row.dart';
+ import 'column_row.dart';
+ import 'Page_One.dart';
+ import 'Page_Two.dart';
+ import 'Page_Three.dart';
 void main(){
   runApp(const IbarhimApp());
 }
@@ -12,6 +15,7 @@ class IbarhimApp extends StatelessWidget{
  return const MaterialApp(
    debugShowCheckedModeBanner: false,
    home: RowCollumScreen(),
+
  );
   }
 
