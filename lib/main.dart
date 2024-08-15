@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
- import 'column_row.dart';
- import 'Page_One.dart';
- import 'Page_Two.dart';
- import 'Page_Three.dart';
+import 'column_row.dart';
+import 'Page_One.dart';
+import 'Page_Three.dart';
+
 void main(){
   runApp(const IbarhimApp());
 }
@@ -14,7 +14,7 @@ class IbarhimApp extends StatelessWidget{
   Widget build(BuildContext context) {
  return const MaterialApp(
    debugShowCheckedModeBanner: false,
-   home: RowCollumScreen(),
+   home: HomeOne(),
 
  );
   }
