@@ -15,7 +15,7 @@ class _HomeOneState extends State<HomeOne> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
     animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 2));
+        AnimationController(vsync: this, duration: Duration(seconds: 3));
 
     animation = Tween(begin: 300.0, end: 0.0).animate(CurvedAnimation(
       parent: animationController,
@@ -26,7 +26,7 @@ class _HomeOneState extends State<HomeOne> with SingleTickerProviderStateMixin {
       setState(() {});
     });
 
-    animationController.repeat(reverse: true);  // লাফিয়ে লাফিয়ে ছোট হবার প্রভাব
+    animationController.repeat(reverse: true);  
 
   }
 
