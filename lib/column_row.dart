@@ -1,67 +1,30 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
-class HomeOne extends StatefulWidget {
-  const HomeOne({super.key});
+class animatoin extends StatelessWidget {
+   const animatoin({super.key});
 
-  @override
-  State<HomeOne> createState() => _HomeOneState();
-}
-
-class _HomeOneState extends State<HomeOne> with SingleTickerProviderStateMixin {
-  late Animation<double> animation;
-  late AnimationController animationController;
-
-  @override
-  void initState() {
-    super.initState();
-    animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 2));
-
-    animation = Tween(begin: 300.0, end: 0.0).animate(CurvedAnimation(
-      parent: animationController,
-      curve: Curves.bounceOut,
-    ));
-
-    animationController.addListener(() {
-      setState(() {});
-    });
-
-    animationController.repeat(reverse: true);  // লাফিয়ে লাফিয়ে ছোট হবার প্রভাব
-
-  }
-
-  @override
-  void dispose() {
-    animationController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 60,
-        title: Text(
-          'Animation ',
-          style: TextStyle(fontSize: 33, color: Colors.white),
-        ),
-        backgroundColor: Colors.blue,
-        titleSpacing: 1,
-        elevation: 11,
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Container(
-          width: animation.value,
-          height: animation.value,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(200),
-          ),
-          child: Image.network(
-              'https://5.imimg.com/data5/SELLER/Default/2022/2/AN/GU/GF/148003961/football-soccer-balls-500x500.png'),
-        ),
-      ),
-    );
-  }
-}
+   @override
+   Widget build(BuildContext context) {
+     return  Scaffold(
+       appBar: AppBar(
+         titleSpacing: 1,
+         title: Text('Animation ',
+         style: TextStyle(fontSize: 33,color: Colors.white),),
+         backgroundColor: Colors.blue,
+         elevation: 2,
+         centerTitle: true,
+       ),
+       body: Center(
+         child: Container(
+           width: 300,
+           height: 300,
+           child: Image.network( 'https://th.bing.com/th/id/OIP.AS3wCcB0zvhSwFcZtranOgHaHa?rs=1&pid=ImgDetMain'),
+           decoration: BoxDecoration(
+             color: Colors.blue,
+             borderRadius: BorderRadius.circular(200),
+           ),
+         ),
+       ),
+     );
+   }
+ }
