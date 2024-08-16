@@ -1,19 +1,19 @@
- import 'package:flutter/cupertino.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'column_row.dart';
+import 'package:universit/column_row.dart';
+
 void main(){
-  runApp(ChatApp());
- }
-
-
- class ChatApp extends StatelessWidget{
-  const ChatApp({super.key});
+  runApp(lookApp());
+}
+class lookApp extends StatelessWidget{
+  const lookApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: animatoin() ,
-      debugShowCheckedModeBanner: true,
-    );
+   return MaterialApp(
+     home: LookApp(),
+   );
+
   }
-  }
+
+}
