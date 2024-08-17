@@ -8,14 +8,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:universit/main.dart';
 
+
+import '../lib/body/bodyScreen.dart';
 import '../lib/column_row.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const animatoin());
+    await tester.pumpWidget(const  Bookapp());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
