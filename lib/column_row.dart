@@ -15,13 +15,77 @@ class animatoin extends StatelessWidget {
          centerTitle: true,
        ),
        body: Center(
+
          child: Container(
-           width: 300,
-           height: 300,
-           child: Image.network( 'https://th.bing.com/th/id/OIP.AS3wCcB0zvhSwFcZtranOgHaHa?rs=1&pid=ImgDetMain'),
-           decoration: BoxDecoration(
-             color: Colors.blue,
-             borderRadius: BorderRadius.circular(200),
+
+           width: 400,
+           child: Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+             children: [
+               Center(
+                 child: TextField(
+
+                   decoration: InputDecoration(
+                       hintText: 'Enter Yoru Gmail',
+                     enabledBorder: OutlineInputBorder(
+                         borderRadius: BorderRadius.circular(15),
+                         borderSide: BorderSide(color: Colors.black,width: 1)
+                     ),
+                     focusedBorder: OutlineInputBorder(
+                         borderRadius: BorderRadius.circular(15),
+                         borderSide: BorderSide(color: Colors.blue,width: 2)
+
+                     ),
+
+                     border: OutlineInputBorder(
+
+                       borderRadius: BorderRadius.circular(15),
+
+                     )
+
+                   ),
+
+
+
+
+                 ),//textfild1
+
+               ),
+               Container(height: 15,),
+               Center(
+                 child: TextField(
+
+                     obscureText: true,
+                   decoration: InputDecoration(
+                     hintText: 'Enter Yoru Passwrod ',
+                     focusedBorder: OutlineInputBorder(
+
+                         borderRadius: BorderRadius.circular(15),
+                         borderSide: BorderSide(color: Colors.blue,width: 2)
+                     ),
+
+                       enabledBorder: OutlineInputBorder(
+
+                           borderRadius: BorderRadius.circular(15),
+                           borderSide: BorderSide(color: Colors.black,width: 1)
+                       ),
+
+                       suffixIcon:IconButton(
+                         icon: Icon(Icons.remove_red_eye),
+                         onPressed: (){},
+                       ) ,
+                       border: OutlineInputBorder(
+                         borderRadius: BorderRadius.circular(15),
+                       )
+
+                   ),
+
+
+
+
+                 ),
+               ),
+             ],
            ),
          ),
        ),
