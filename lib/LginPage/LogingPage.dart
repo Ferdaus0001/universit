@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:universit/SingupPage/SingupPage.dart';
 import 'package:universit/body/bodyScreen.dart';
 
 class Lging extends StatefulWidget {
@@ -96,7 +97,11 @@ class _LgingState extends State<Lging> {
                  
                 }, child:Text('Lgin',style: TextStyle(fontSize: 23,color: Colors.blue),),
 
-                )
+                ),
+                Container(height: 20,),
+                ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Singup(),));
+                }, child: const Text("Create account",style: TextStyle(fontSize: 19,color: Colors.blue),)),
               ],
             ),
           ),
