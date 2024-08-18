@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:universit/LginPage/LogingPage.dart';
+import 'package:universit/LoginPage/LogingPage.dart';
+import 'package:universit/SplashScreen/SplashScreenPage.dart';
 
 import 'package:universit/body/bodyScreen.dart';
 void main(){
@@ -15,7 +17,7 @@ class Loginapp extends StatelessWidget{
   Widget build(BuildContext context) {
    return MaterialApp(
      debugShowCheckedModeBanner: false,
-     home:Lging(),
+     home:SplashScreen(),
    );
   }
 
