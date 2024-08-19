@@ -1,3 +1,4 @@
+/// cody by Ferdaus hosan 
 import 'package:flutter/material.dart';
 
 class HomeOne extends StatefulWidget {
@@ -49,7 +50,7 @@ class _HomeOneState extends State<HomeOne> with SingleTickerProviderStateMixin {
         titleSpacing: 1,
         elevation: 11,
         centerTitle: true,
-      ),
+      ),//cody by ferdaus hosan 
       body: Center(
         child: Container(
           width: animation.value,
